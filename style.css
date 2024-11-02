@@ -1,0 +1,142 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+    --bg-color: #322653;
+    --btn-color: #EA1179;
+    --text-color: #fff;
+    --highlight-color: #a363aa;
+}
+
+/* Body */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Header and Navigation */
+.header_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.logo label {
+    color: var(--btn-color);
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--btn-color);
+}
+
+/* Sections */
+.container {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 2.5em;
+    color: var(--highlight-color);
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#home h1 {
+    font-size: 3em;
+    color: var(--text-color);
+}
+
+#home span {
+    color: var(--btn-color);
+}
+
+.profile-image {
+    max-width: 45%;
+    border-radius: 10px;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--btn-color);
+    color: var(--text-color);
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b20f63;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 1em;
+}
+
+form button {
+    background-color: var(--btn-color);
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
